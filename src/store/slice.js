@@ -1,6 +1,7 @@
 import { getRecentUsers } from "@/Controllers/getRecentUser";
 import {  createSlice } from "@reduxjs/toolkit";
 import { setRecentUsers } from "./userslice.js";
+import ORIGIN from "@/Controllers/URL.js";
 
 
 
@@ -43,7 +44,7 @@ export const verifyUser = () => async (dispatch) => {
   try {
       console.log("⚡ Fetching user data...");
       
-      const res = await fetch(`/api/verify/verifyuser`, {
+      const res = await fetch(`${ORIGIN}/api/verify/verifyuser`, {
           method: "GET",
           credentials: "include",
       });
