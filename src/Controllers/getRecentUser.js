@@ -1,6 +1,8 @@
+import ORIGIN from "./URL";
+
 export const getRecentUsers=async()=>{
 try {
-  const res=await  fetch(`${URL}/api/search/recentUsers`,{
+  const res=await  fetch(`${ORIGIN}/api/search/recentUsers`,{
         method:"GET",
         credentials: "include",
         headers: {

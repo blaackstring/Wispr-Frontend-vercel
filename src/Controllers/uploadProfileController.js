@@ -1,6 +1,8 @@
+import ORIGIN from "./URL";
+
 export const uploadPic = async (formData) => {
     try {
-      const res = await fetch(`${URL}/api/auth/uploadfile`, {
+      const res = await fetch(`${ORIGIN}/api/auth/uploadfile`, {
         method: "POST",
         credentials: "include", // Optional, if you need cookies/session
         body: formData, // Just send the FormData object, no need to manually set Content-Type

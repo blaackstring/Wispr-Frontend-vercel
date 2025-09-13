@@ -1,7 +1,8 @@
-import URL from "./URL";
+import ORIGIN from "./URL";
+
 
 export const SignupController = async (formdata) => {
-  return await fetch(`${URL}/api/auth/signup`, {
+  return await fetch(`${ORIGIN}/api/auth/signup`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -14,7 +15,7 @@ export const LoginController = async (formdata) => {
   console.log(formdata);
 
 console.log(import.meta.env.VITE_PORT+"")
-  return await fetch(`${URL}/api/auth/login`, {
+  return await fetch(`${ORIGIN}/api/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -26,7 +27,7 @@ console.log(import.meta.env.VITE_PORT+"")
 
 
 export const LogoutController = async () => {
-  return fetch(`${URL}/api/auth/logout`, {
+  return fetch(`${ORIGIN}/api/auth/logout`, {
     method: "GET",
     credentials: "include",
     headers: {

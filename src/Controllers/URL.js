@@ -1,1 +1,3 @@
-export default URL='https://wispr-chatapp.onrender.com'
+const ORIGIN='https://wispr-chatapp.onrender.com'
+
+export default ORIGIN;

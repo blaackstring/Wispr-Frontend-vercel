@@ -1,6 +1,8 @@
+import ORIGIN from "./URL";
+
  export const getAllUsers=async(fullname)=>{
 
-const res=await  fetch(`${URL}/api/search/users?fullname=${fullname}`,{
+const res=await  fetch(`${ORIGIN}/api/search/users?fullname=${fullname}`,{
     method:"GET",
     credentials: "include",
     headers: {

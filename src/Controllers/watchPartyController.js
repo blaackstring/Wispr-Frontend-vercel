@@ -1,6 +1,8 @@
+import ORIGIN from "./URL";
+
 export const sendurl=async(url,id,senderid)=>{
     try {
-        const res= await fetch(`${URL}/api/watchparty/sendUrl/${id}/${senderid}`,{
+        const res= await fetch(`${ORIGIN}/api/watchparty/sendUrl/${id}/${senderid}`,{
             method:"POST",
             credentials:"include",
             headers: {
@@ -19,7 +21,7 @@ export const sendurl=async(url,id,senderid)=>{
 
 export const playorpaused=async(data,id,senderid)=>{
     try {
-        const res= await fetch(`${URL}/api/watchparty/play_pause/${id}/${senderid}`,{
+        const res= await fetch(`${ORIGIN}/api/watchparty/play_pause/${id}/${senderid}`,{
             method:"POST",
             credentials:"include",
             headers: {
@@ -43,7 +45,7 @@ export const playorpaused=async(data,id,senderid)=>{
 
 export const seeked=async(data,id,senderid)=>{
     try {
-        const res= await fetch(`${URL}/api/watchparty/seek/${id}/${senderid}`,{
+        const res= await fetch(`${ORIGIN}}/api/watchparty/seek/${id}/${senderid}`,{
             method:"POST",
             credentials:"include",
             headers: {

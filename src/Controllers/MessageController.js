@@ -1,8 +1,9 @@
 import Message from "@/components/Message";
+import ORIGIN from "./URL";
 
 export const sendmsg=async(id,data)=>{
 try {
-    const res=await fetch(`${URL}/api/messages/send/${id}`,{
+    const res=await fetch(`${ORIGIN}/api/messages/send/${id}`,{
         method:"POST",
         credentials: "include",
         headers: {
