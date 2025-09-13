@@ -132,13 +132,14 @@ function App() {
             }}
           >
             {/* Logo/Brand */}
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 ">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
-              <span className="font-bold text-xl bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-                WISPR
+              <span className="font-bold text-l mr-4 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                WISPR <span className="bg-gradient-to-r bg-clip-text from-white via-black/20 to-purple-400 text-transparent ">ChatAPP</span>
               </span>
+             
             </div>
 
             {/* Navigation Links */}
@@ -146,7 +147,7 @@ function App() {
               <Link
                 to="/login"
                 className={`
-                  relative px-6 py-3 font-semibold text-sm uppercase tracking-wider
+                  relative px-4 py-3 font-semibold text-sm uppercase tracking-wider
                   transition-all duration-300 ease-out rounded-xl
                   focus:outline-none focus:ring-2 focus:ring-white/50
                   ${location.pathname === "/login"
@@ -169,7 +170,7 @@ function App() {
               <Link
                 to="/signup"
                 className={`
-                  relative px-6 py-3 font-semibold text-sm uppercase tracking-wider
+                  relative px-4 py-3 font-semibold text-sm uppercase tracking-wider
                   transition-all duration-300 ease-out rounded-xl
                   focus:outline-none focus:ring-2 focus:ring-white/50
                   ${location.pathname === "/signup"
